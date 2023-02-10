@@ -1,0 +1,135 @@
+
+<!--------------------------------------------------------------------------------------------------->
+<div class="container" style="background-color: #999; margin-top: 50px;">
+                <!------------------------Heading----------------------->
+    <div>
+        <h2 class="text-center" style="color: greenyellow;">Employees List</h2>
+    </div>
+
+                <!-------------------------Header------------------------->
+    <div class="row">
+        <div class="offset-sm-3 col-sm-3">
+            <input type="search" [(ngModel)]="searchText" placeholder="Search Here....." class="form-control mb-2">
+        </div>
+        <div class=" col-sm-3 ">
+            <button class="m-2" (click)="asec()"><i class='fa fa-arrow-down'></i></button>
+            <button (click)="dsec()"><i class='fa fa-arrow-up'></i></button>
+        </div>
+        <div class=" col-sm-3 ">
+            <button class="btn btn-success" data-bs-toggle="modal" data-bs-target="#empModal" (click)="onAddClick()">Add emp</button>
+        </div>
+    </div>
+<!------------------------------------------------------------------------------------------------------------------>
+<!---------------------------------------Table Part----------------------------------------------------------------->
+    <div class="row col-sm-12 text-center">
+        <table class="table table-bordered table-primary">
+            <thead>
+                <tr>
+                    <th>Emp_Id</th>
+                    <th>First_Name</th>
+                    <th>Last_Name</th>
+                    <th>Gender</th>
+                    <th>Salary</th>
+                    <th>DOB</th>
+                    <th>Email</th>
+                    <th>Phone_Number</th>
+                    <th>Action</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr *ngFor="let emp of allEmployees | filter : searchText | paginate: { itemsPerPage: 4, currentPage: p }">
+                    <td>{{emp.empid}}</td>
+                    <td>{{emp.fname}}</td>
+                    <td>{{emp.lname}}</td>
+                    <td>{{emp.gend}}</td>
+                    <td>{{emp.sal}}</td>
+                    <td>{{emp.dob}}</td>
+                    <td>{{emp.email}}</td>
+                    <td>{{emp.phoneno}}</td>
+                    <td>
+                        <button (click)="edit(emp)" data-bs-toggle="modal" data-bs-target="#empModal" class="btn btn-sm btn-info text-white mx-2">Edit</button>
+
+                        <button (click)="deleteEmployeeDetail(emp.id)" class="btn btn-sm btn-danger">Delete</button>
+                    </td>
+
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    <!------------------------------------------------------------------------>
+    <!--------Pagination------------------------------------------------------>
+    <div class="row">
+        <div class="offset-sm-3 col-sm-6">
+            <pagination-controls (pageChange)="p = $event"></pagination-controls>
+        </div>
+    </div>
+    <!------------------------------------------------------------------------->
+</div>
+
+
+
+
+<!-----------------Modal Box------------------------>
+
+
+<div class="modal fade" id="empModal" tabindex="-1" aria-labelledby="empModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="empModalLabel">Employee Details</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+            <form [formGroup]="employeeForm">
+                <div class="mb-3">
+                    <label  class="form-label">Emp_Id</label>
+                    <input type="number" class="form-control"  placeholder="000" formControlName="empid">
+                  </div>
+
+                  <div class="mb-3">
+                    <label  class="form-label">First_Name</label>
+                    <input type="text" class="form-control"  placeholder="First Name" formControlName="fname">
+                  </div>
+
+                  <div class="mb-3">
+                    <label  class="form-label">Last_Name</label>
+                    <input type="text" class="form-control"  placeholder="Last Name" formControlName="lname">
+                  </div>
+
+                  <div class="mb-3">
+                    <label  class="form-label">Gender</label>
+                    <input type="text" class="form-control"  placeholder="Gender" formControlName="gend">
+                  </div>
+
+                  <div class="mb-3">
+                    <label  class="form-label">Salary</label>
+                    <input type="text" class="form-control"  placeholder="00000" formControlName="sal">
+                  </div>
+
+                  <div class="mb-3">
+                    <label  class="form-label">DOB</label>
+                    <input type="text" class="form-control"  placeholder="00-00-0000" formControlName="dob">
+                  </div>
+    
+                  <div class="mb-3">
+                    <label  class="form-label">Email</label>
+                    <input type="email" class="form-control"  placeholder="example@gmail.com" formControlName="email">
+                  </div>
+    
+                  
+                  <div class="mb-3">
+                    <label  class="form-label">Phone_Number</label>
+                    <input type="number" class="form-control"  placeholder="+0000000000" formControlName="phoneno">
+                  </div>
+                </form>
+
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal" id="close" (click)="reset()">Close</button>
+          <button type="button" class="btn btn-primary" (click)="updateStudentDetails()" *ngIf="showUpdateBtn">Update emp</button>
+
+          <button type="button" class="btn btn-success" (click)="postEmployeeDetails()" *ngIf="showAddBtn">Add emp</button>
+        </div>
+      </div>
+    </div>
+  </div>

@@ -1,0 +1,100 @@
+<nav>
+    <div class="text-info mt-10">
+        <h4 id="header_name">Angular Topic List</h4>
+    </div>
+
+    <div class="col sidebar">
+        <div class="scrollbox-inner">
+        <ul class="mainmenu">
+            <li><a routerLink="/databinding" routerLinkActive="active">Data_Binding</a>
+                <ul class="submenu">
+                    <li><a href="#">Interpolation</a></li>
+                    <li><a href="#">Property_Binding</a></li>
+                    <li><a href="#">Event_Binding</a></li>
+                    <li><a href="#">Two_Way_Binding</a></li>
+                </ul> 
+            </li>
+            <li><a href="#">T.R_Variable</a></li>
+            <li><a href="#">View_Encapsulation</a>
+                <ul class="submenu">
+                    <li><a href="#">Emulated</a></li>
+                    <li><a href="#">shadowDOM</a></li>
+                    <li><a href="#">None</a></li>
+                </ul>
+            </li>
+            <li><a href="#">Directives</a>
+                <ul class="submenu">
+                    <li><a href="#">Structural Directives</a>
+                        <ul class="submenu_1">
+                            <li><a href="#">Ng_If</a></li>
+                            <li><a routerLink="/ngfor" routerLinkActive="active" >Ng_For</a>
+                                <ul class="submenu_2">
+                                    <li><a href="#">Predefined Variables</a></li>
+                                    <li><a href="#">Ng_For TrackBy</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="#">Ng_Switch</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">Attribute Directives</a>
+                        <ul class="submenu_1">
+                            <li><a href="#">Ng_Style</a></li>
+                            <li><a href="#">Ng_Class</a></li>
+                            <li><a href="#">Hidden</a></li>
+                            <li><a href="#">Disabled</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">Custom Directives</a></li>
+                </ul>
+            </li>
+            <li><a href="#">JSON Data Read</a></li>
+            <li><a href="#">Ng-Template</a></li>
+            <li><a href="#">Ng-Container</a></li>
+            <li><a href="#">Ng-Content</a></li>
+            <li><a href="#">Angular Pipes</a>
+                <ul class="submenu">
+                    <li><a href="#">Built-in Pipes</a></li>
+                    <li><a href="#">Custom Pipes</a></li>
+                </ul>
+            </li>
+            <li><a href="#">Component Communication</a></li>
+            <li><a href="#">LifeCycle Hooks</a>
+                <ul class="submenu">
+                    <li><a href="#">Costructor</a></li>
+                    <li><a href="#">ngOnChanges</a></li>
+                    <li><a href="#">ngOnInit</a></li>
+                    <li><a href="#">ngDoCheck</a></li>
+                    <li><a href="#">ngAfterViewInit</a></li>
+                    <li><a href="#">ngAfterViewChecked</a></li>
+                    <li><a href="#">ngAfterContentInit</a></li>
+                    <li><a href="#">ngAfterContentChecked</a></li>
+                    <li><a href="#">ngDestroy</a></li>
+                </ul>
+            </li>
+            <li><a href="#">Services</a>
+            <li><a href="#">Dependency injection</a>
+            <li><a href="#">HTTP Methods</a>
+            <li><a href="#">Rest API's</a>
+            <li><a href="#">Models in Angular</a>
+            <li><a href="#">Interceptor</a>
+            <li><a href="#">Observables</a>
+            <li><a href="#">RxJS</a>
+            
+        </ul>
+        </div>
+    </div>
+</nav>
+
+<!----========================================================================================================================-->
+<!-- <nav>
+    <div class="text-info mt-10">
+        <h4 id="header_name">Angular Topic List</h4>
+    </div>
+    <div class="col">
+        <ul class="items">
+            <li *ngFor = "let topic of topicList">
+                <span class="badge">{{topic.id}}</span><a href="#">{{topic.name}}</a>
+            </li>
+        </ul>
+    </div>
+</nav> -->

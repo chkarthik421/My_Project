@@ -1,0 +1,19 @@
+img {
+    width: 100px;
+    height: 100px;
+}
+
+.myClass{
+            color:red;
+            border:5px solid green;
+        }
+
+        div{
+            color: sienna;
+        }
+        p{
+            color: springgreen;
+        }
+        h3{
+            color: violet;
+        }

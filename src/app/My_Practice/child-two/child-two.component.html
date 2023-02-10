@@ -1,0 +1,53 @@
+<h5 style="color: green;">I am Child _02 Component</h5>
+<br>
+<input type="text" [(ngModel)]=text/>
+<button (click)="toParent()" type="button">Send</button>
+<div class="row text-success">
+    <div class="col col-6 disp-flex border">
+        <label class="me-3">Input-Text Data Send To Parent </label>
+        <input type="text" [(ngModel)]=text1/>
+        <button type="button" (click)="toParentText()">Send</button>
+    </div>
+    <div class="col col-6 disp-flex border">
+        <label class="me-3">Input-Number Data Send To Parent </label>
+        <input type="number" />
+    </div>
+    <div class="col col-6 disp-flex border">
+        <label class="me-3">Input-Select Data Send To Parent </label>
+                <select type="select">
+                    <option>Naresh IT</option>
+                    <option>Sunadh</option>
+                    <option>Sathya IT</option>
+                </select>
+    </div>
+    <div class="col col-6 disp-flex border">
+        <p class="me-3">Input-checkbox Data Send To Parent </p>
+        <input type="checkbox" id="watsup" name="social1" value="WATSUP">
+        <label for="watsup">Watsup</label>
+        &nbsp;
+        <input type="checkbox" id="fb" name="social2" value="FACE BOOK">
+        <label for="fb">Face Book</label>
+        &nbsp;
+        <input type="checkbox" id="twitter" name="social3" value="TWITTER">
+        <label for="twitter">Twitter</label>
+    </div>
+</div>
+<hr>
+<div class="row">
+    <div class="col col-sm-8 border text-info">
+        <p>Data From Parent Input-Text:{{ch2text}}</p>
+        <p>Data From Parent Input-Number:{{ch2num}}</p>            
+        <p>Data From Parent Input-Select:{{ch2selecttext}}</p>            
+        <p>Data From Parent Input-Checkbox:{{ch2checkboxtext}}</p>            
+    </div>
+</div>
+<hr>
+<div class="row">
+    <div class="col col-sm-8 border text-danger">
+        <p>Data From child-01 Input-Text:</p>
+        <p>Data From child-01 Input-Number:</p>            
+        <p>Data From child-01 Input-Select:</p>            
+        <p>Data From child-01 Input-Checkbox:</p>            
+    </div>
+</div>
+

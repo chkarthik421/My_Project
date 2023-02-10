@@ -1,0 +1,93 @@
+<table class="table table-bordered table-striped">
+    <thead>
+        <tr>
+        <th>Emp Id</th>
+        <th>Emp F.Name</th>
+        <th>Emp L.Name</th>
+        <th>Emp Gender</th>
+        <th>Emp Salary</th>
+        <th>Emp DOB</th>
+        </tr>
+    </thead>
+    <tbody>
+    <tr *ngFor="let employe of employees">
+        <td>{{employe.empid}}</td>
+        <td>{{employe.firstName}}</td>
+        <td>{{employe.lastName | mrMiss: employe.gender}}</td>
+        <td>{{employe.gender}}</td>
+        <td>{{employe.salary}}</td>
+        <td>{{employe.DOB}}</td>
+    </tr>
+</tbody>
+</table>
+<!---------------------------------------------------------------------------->
+<!-- <ul>
+    <li *ngFor="let flower of flowers">{{flower}}</li>
+</ul> -->
+<!-- <select [(ngModel)]="selectedFlower">
+    <option *ngFor="let flower of flowers">{{flower}}</option>
+</select>
+<p>Your favorate flower is : {{selectedFlower}}</p> 
+
+ <select [(ngModel)]="selectedState">
+    <option *ngFor="let state of states" [value]="state.code">{{state.name}}</option>
+</select>
+<p>Your state is : {{selectedState}}</p> 
+
+<input list="countrylist" id="names" name="browser"  [(ngModel)]="selectedCountry">
+<datalist id="countrylist">
+    <option *ngFor="let country of country_list" >{{country}}</option>
+</datalist>
+<p>Your country is : {{selectedCountry}}</p> --->
+
+<!-- <table class="table table-bordered table-striped">
+    <thead>
+        <tr>
+        <th>Emp Id</th>
+        <th>Emp F.Name</th>
+        <th>Emp L.Name</th>
+        <th>Emp Gender</th>
+        <th>Emp Salary</th>
+        <th>Emp DOB</th>
+        </tr>
+    </thead>
+    <tbody>
+    <tr *ngFor="let employe of employees">
+        <td>{{employe.empid}}</td>
+        <td>{{employe.firstName}}</td>
+        <td>{{employe.lastName}}</td>
+        <td>{{employe.gender}}</td>
+        <td>{{employe.salary}}</td>
+        <td>{{employe.DOB}}</td>
+    </tr>
+</tbody>
+</table> -->
+
+<!-- <table class="table table-bordered table-striped">
+    <thead>
+        <tr>
+            <th> Id</th> 
+            <th>Title</th>
+            <th>Price</th>
+            <th>Description</th>
+            <th>Category</th>
+            <th>Image</th>
+            <th>Rating</th>
+            <th>Rating Count</th> 
+            
+        </tr>
+    </thead>
+    <tbody>
+    <tr *ngFor="let product of strProducts">
+        <td>{{product.id}}</td>
+        <td>{{product.title}}</td>
+        <td>{{product.price}}</td>
+        <td>{{product.description}}</td>
+        <td>{{product.category}}</td>
+        <td>{{product.image}}</td>
+        <td>{{product.rating.rate}}</td>
+        <td>{{product.rating.count}}</td>
+         
+    </tr>
+</tbody>
+</table> -->

@@ -1,0 +1,368 @@
+{
+    "posts": [
+        {  "Emp_Id": 101,
+            "First_Name": "Chebodula",
+            "Last_Name": "Karthik",
+            "Gender": "Male",
+            "Salary": 15000,
+            "DOB": "12-09-1989",
+            "Email": "chkarthik421@gmail.com",
+            "Phone_Number": 8328276160,
+            "Address":  {
+                          "Village" : "Parasurampuram",
+                          "Mandal" : "Palakonda",
+                          "District" : "Parvathipuram Manyam" , 
+                          "State" :  "Andhrapraesh" ,
+                          "PinCode" : 532440
+                        },
+            "id": 1
+          },
+        {   
+            "Emp_Id": 102,
+            "First_Name": "Chebodula",
+            "Last_Name":  "Manmadharao",
+            "Gender": "Male",
+            "Salary": 20000,
+            "DOB":  "10-08-1945",
+            "Email":  "chmanmadha@gmail.com",
+            "Phone_Number": 9515903749,
+            "Address":  {
+                            "Village" : "Parasurampuram",
+                            "Mandal" : "Palakonda",
+                            "District" : "Parvathipuram Manyam" , 
+                            "State" :  "Andhrapraesh" ,
+                            "PinCode" : 532440
+                        },
+            "id": 2
+          },
+        {
+            "Emp_Id":103,
+            "First_Name":"Chebodula",
+            "Last_Name":"Laxmi",
+            "Gender":"Female",
+            "Salary":17000,
+            "DOB":"02-05-1951",
+            "Email":"chlaxmi@gmail.com",
+            "Phone_Number":7997545819,
+            "Address":  {
+                            "Village" : "Parasurampuram",
+                            "Mandal" : "Palakonda",
+                            "District" : "Parvathipuram Manyam" , 
+                            "State" :  "Andhrapraesh" ,
+                            "PinCode" : 532440
+                        },
+              "id": 3
+          },
+        { 
+            "Emp_Id":104,
+            "First_Name":"Chebodula",
+            "Last_Name":"Mounika",
+            "Gender":"Female",
+            "Salary":18000,
+            "DOB":"06-10-2000",
+            "Email":"chmounika@gmail.com",
+            "Phone_Number":8125236160,
+            "Address":  {
+                            "Village" : "Parasurampuram",
+                            "Mandal" : "Palakonda",
+                            "District" : "Parvathipuram Manyam" , 
+                            "State" :  "Andhrapraesh" ,
+                            "PinCode" : 532440
+                        },
+              "id": 4
+          },
+        {   
+            "Emp_Id":105,
+            "First_Name":"Neradabilli",
+            "Last_Name":"Swapna",
+            "Gender":"Female",
+            "Salary":16000,
+            "DOB":"03-01-1984",
+            "Email":"nswapna@gmail.com",
+            "Phone_Number":9705144208,
+            "Address":  {
+                            "Village" : "Parasurampuram",
+                            "Mandal" : "Palakonda",
+                            "District" : "Parvathipuram Manyam" , 
+                            "State" :  "Andhrapraesh" ,
+                            "PinCode" : 532440
+                        },
+              "id": 5
+          },
+        { 
+            "Emp_Id":106,
+            "First_Name":"Neradabilli",
+            "Last_Name":"Srinu",
+            "Gender":"male",
+            "Salary":21000,
+            "DOB":"10-10-1974",
+            "Email":"nsrinu@gmail.com",
+            "Phone_Number":9682513882,
+            "Address":  {
+                          "Village" : "Parasurampuram",
+                          "Mandal" : "Palakonda",
+                          "District" : "Parvathipuram Manyam" , 
+                          "State" :  "Andhrapraesh" ,
+                          "PinCode" : 532440
+                        },
+            "id": 6
+          },
+        {   
+            "Emp_Id":107,
+            "First_Name":"Neradabilli",
+            "Last_Name":"Sindhuja",
+            "Gender":"Female",
+            "Salary":13000,
+            "DOB":"06-10-2004",
+            "Email":"nsindhuja@gmail.com",
+            "Phone_Number":7989958396,
+            "Address":  {
+                            "Village" : "Parasurampuram",
+                            "Mandal" : "Palakonda",
+                            "District" : "Parvathipuram Manyam" , 
+                            "State" :  "Andhrapraesh" ,
+                            "PinCode" : 532440
+                        },
+              "id": 7
+          },
+        {
+            "Emp_Id":108,
+            "First_Name":"Neradabilli",
+            "Last_Name":"Manoj",
+            "Gender":"male",
+            "Salary":19000,
+            "DOB":"06-03-2006",
+            "Email":"nmanoj@gmail.com",
+            "Phone_Number":8008268454,
+            "Address":  {
+                            "Village" : "Parasurampuram",
+                            "Mandal" : "Palakonda",
+                            "District" : "Parvathipuram Manyam" , 
+                            "State" :  "Andhrapraesh" ,
+                            "PinCode" : 532440
+                        },
+              "id": 8
+          },
+        {
+            "Emp_Id":109,
+            "First_Name":"Namana",
+            "Last_Name":"Sankar",
+            "Gender":"male",
+            "Salary":13000,
+            "DOB":"18-03-1982",
+            "Email":"nsankar@gmail.com",
+            "Phone_Number":9573956888,
+            "Address":  {
+                          "Village" : "Parasurampuram",
+                          "Mandal" : "Palakonda",
+                          "District" : "Parvathipuram Manyam" , 
+                          "State" :  "Andhrapraesh" ,
+                          "PinCode" : 532440
+                        },
+              "id": 9
+          },    
+        {
+            "Emp_Id":110,
+            "First_Name":"Namana",
+            "Last_Name":"Pavani",
+            "Gender":"Female",
+            "Salary":18000,
+            "DOB":"06-10-1990",
+            "Email":"npavani@gmail.com",
+            "Phone_Number":8074242626,
+            "Address":  {
+                          "Village" : "Parasurampuram",
+                          "Mandal" : "Palakonda",
+                          "District" : "Parvathipuram Manyam" , 
+                          "State" :  "Andhrapraesh" ,
+                          "PinCode" : 532440
+                        },
+              "id": 10
+          },    
+        {
+            "Emp_Id":111,
+            "First_Name":"chebodula",
+            "Last_Name":"Satish",
+            "Gender":"male",
+            "Salary":12000,
+            "DOB":"03-01-1992",
+            "Email":"chsatish@gmail.com",
+            "Phone_Number":8499936411,
+            "Address":  {
+                          "Village" : "Parasurampuram",
+                          "Mandal" : "Palakonda",
+                          "District" : "Parvathipuram Manyam" , 
+                          "State" :  "Andhrapraesh" ,
+                          "PinCode" : 532440
+                        },
+              "id": 11
+          },    
+        {
+            "Emp_Id":112,
+            "First_Name":"Bachhala",
+            "Last_Name":"Jayasankar",
+            "Gender":"male",
+            "Salary":17000,
+            "DOB":"09-05-1984",
+            "Email":"bjayasankar@gmail.com",
+            "Phone_Number":9573954888,
+            "Address":  {
+                          "Village" : "Parasurampuram",
+                          "Mandal" : "Palakonda",
+                          "District" : "Parvathipuram Manyam" , 
+                          "State" :  "Andhrapraesh" ,
+                          "PinCode" : 532440
+                        },
+              "id": 12
+          },    
+        {
+            "Emp_Id":113,
+            "First_Name":"Alajangi",
+            "Last_Name":"Dinesh",
+            "Gender":"male",
+            "Salary":15000,
+            "DOB":"18-10-1989",
+            "Email":"adinesh@gmail.com",
+            "Phone_Number":9014501867,
+            "Address":  {
+                          "Village" : "Parasurampuram",
+                          "Mandal" : "Palakonda",
+                          "District" : "Parvathipuram Manyam" , 
+                          "State" :  "Andhrapraesh" ,
+                          "PinCode" : 532440
+                        },
+              "id": 13
+          },    
+        {
+            "Emp_Id":114,
+            "First_Name":"Malleda",
+            "Last_Name":"TavitiNaidu",
+            "Gender":"male",
+            "Salary":22000,
+            "DOB":"14-11-1988",
+            "Email":"mataviti@gmail.com",
+            "Phone_Number":9652489696,
+            "Address":  {
+                          "Village" : "Parasurampuram",
+                          "Mandal" : "Palakonda",
+                          "District" : "Parvathipuram Manyam" , 
+                          "State" :  "Andhrapraesh" ,
+                          "PinCode" : 532440
+                        },
+              "id": 14
+          },    
+        {
+            "Emp_Id":115,
+            "First_Name":"Balaga",
+            "Last_Name":"Shiva",
+            "Gender":"male",
+            "Salary":16000,
+            "DOB":"22-09-1989",
+            "Email":"bshiva@gmail.com",
+            "Phone_Number":7725977807,
+            "Address":  {
+                          "Village" : "Parasurampuram",
+                          "Mandal" : "Palakonda",
+                          "District" : "Parvathipuram Manyam" , 
+                          "State" :  "Andhrapraesh" ,
+                          "PinCode" : 532440
+                        },
+              "id": 15
+          },    
+        {
+            "Emp_Id":116,
+            "First_Name":"Sasubilli",
+            "Last_Name":"Hemanth",
+            "Gender":"male",
+            "Salary":16000,
+            "DOB":"10-89-1982",
+            "Email":"shemanth@gmail.com",
+            "Phone_Number":7672029298,
+            "Address":  {
+                          "Village" : "Parasurampuram",
+                          "Mandal" : "Palakonda",
+                          "District" : "Parvathipuram Manyam" , 
+                          "State" :  "Andhrapraesh" ,
+                          "PinCode" : 532440
+                        },
+              "id": 16
+          },    
+        {
+            "Emp_Id":117,
+            "First_Name":"Danthuluri",
+            "Last_Name":"Raju",
+            "Gender":"male",
+            "Salary":25000,
+            "DOB":"01-05-1975",
+            "Email":"dvnsraju@gmail.com",
+            "Phone_Number":9182511345,
+            "Address":  {
+                          "Village" : "Parasurampuram",
+                          "Mandal" : "Palakonda",
+                          "District" : "Parvathipuram Manyam" , 
+                          "State" :  "Andhrapraesh" ,
+                          "PinCode" : 532440
+                        },
+              "id": 17
+          },    
+        {
+            "Emp_Id":118,
+            "First_Name":"Gangulu",
+            "Last_Name":"Srinu",
+            "Gender":"male",
+            "Salary":17000,
+            "DOB":"02-06-1986",
+            "Email":"gsrinu@gmail.com",
+            "Phone_Number":8385349560,
+            "Address":  {
+                          "Village" : "Parasurampuram",
+                          "Mandal" : "Palakonda",
+                          "District" : "Parvathipuram Manyam" , 
+                          "State" :  "Andhrapraesh" ,
+                          "PinCode" : 532440
+                        },
+              "id": 18
+          },    
+        {
+            "Emp_Id":119,
+            "First_Name":"chebodula",
+            "Last_Name":"Santhosh",
+            "Gender":"male",
+            "Salary":10000,
+            "DOB":"03-06-1993",
+            "Email":"chsanthosh@gmail.com",
+            "Phone_Number":7680046531,
+            "Address":  {
+                          "Village" : "Parasurampuram",
+                          "Mandal" : "Palakonda",
+                          "District" : "Parvathipuram Manyam" , 
+                          "State" :  "Andhrapraesh" ,
+                          "PinCode" : 532440
+                        },
+              "id": 19
+          },    
+        {
+            "Emp_Id":120,
+            "First_Name":"chebodula",
+            "Last_Name":"Yavan",
+            "Gender":"male",
+            "Salary":11000,
+            "DOB":"25-10-1995",
+            "Email":"chyavan@gmail.com",
+            "Phone_Number":7680046539,
+            "Address":  {
+                          "Village" : "Parasurampuram",
+                          "Mandal" : "Palakonda",
+                          "District" : "Parvathipuram Manyam" , 
+                          "State" :  "Andhrapraesh" ,
+                          "PinCode" : 532440
+                        },
+              "id": 20
+          }    
+    
+    ],
+    "comments": [
+      { "id": 1, "body": "some comment", "postId": 1 }
+    ],
+    "profile": { "name": "typicode" }
+  }

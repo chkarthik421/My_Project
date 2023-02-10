@@ -1,0 +1,163 @@
+<div class="container mt-3 bg-light">
+	<div class="row">
+			<div class="col">
+					<div class="col text-center mx-auto bg-secondary p-3 text-warning">
+						<h5>Information Form</h5>
+					</div>
+					<div class="col text-center  bg-light text-primary border border-info rounded">
+						<form name='myForm'>
+							<!-- <fieldset>
+									<legend>Login Form </legend>
+									<div class="col mt-3 mb-3">
+										<label for="username">User Name :</label>
+										<input type="text" id="username" name="username">
+									</div>
+									<div class="col mb-3">
+										<label for="pwd">Password :</label>
+										<input type="password" id="pwd" name="pwd">
+									</div>
+							</fieldset> -->
+							<fieldset>
+								<legend>User Information </legend>
+									<div class="col mb-3">
+										<label for="fname">First Name :</label>
+										<input type="text" id="fname" name="First_Name" placeholder="Chebodula"  [(ngModel)]='firstName' />
+									</div>
+									<div class="col mb-3">
+										<label for="lname">Last Name :</label>
+										<input type="text" id="lname" name="Last_Name" placeholder="Karthik" [(ngModel)]='lastName'/>
+									</div>
+									<div class="col mb-3">
+										<label for="Gender">Gender :</label>
+										<input type="radio" id="male" name="Gender"  value="Male" checked [(ngModel)]='gender'/>
+										<label for="male">Male</label>
+										<input type="radio" id="female" name="Gender"  value="Female"  [(ngModel)]='gender'/>
+										<label for="female">Female</label>
+									</div>
+									<div class="col mb-3">
+										<label for="dob">Date Of Birth :</label>
+										<input type="date" id="dob" name="DOB"  [(ngModel)]='dob'/>
+									</div>
+									<div class="col mb-3">
+										<label for="dtime">Birth Time :</label>
+										<input type="time" id="dtime" name="Time" [(ngModel)]='bofTime'/>
+									</div>
+									<div class="col mt-3 mb-3">
+										<label for="Habbits">Habbits :</label>
+										<input type="checkbox" id="cricket" name="Habbits"  value="cricket"  [(ngModel)]='habbits' checked/>
+										<label for="cricket">Playing Cricket</label>
+										<input type="checkbox" id="reading" name="Habbits"  value="Reading" [(ngModel)]='habbits' />
+										<label for="reading">Reading Books</label>
+										<input type="checkbox" id="singing" name="Habbits"  value="Singing" [(ngModel)]='habbits' />
+										<label for="singing">Singing</label>
+										<input type="checkbox" id="watching" name="Habbits"  value="Watching"  [(ngModel)]='habbits'/>
+										<label for="watching">Watching Movies</label>
+									</div>
+							</fieldset>
+						</form>
+					</div>
+					<p>First Name : {{firstName}}</p>
+					<p>Last Name : {{lastName}}</p>
+					<p>Gender : {{gender}}</p>
+					<p>DOB : {{dob}}</p>
+					<p>Birth Time : {{bofTime}}</p>
+					<p>Habbits : {{habbits}}</p>
+
+					<!-- <div class="col text-center  bg-light text-primary border border-info rounded">
+						<form>
+						<fieldset>
+							<div class="col mt-3 mb-3">
+								<label for="Habbits">Habbits :</label>
+								<input type="checkbox" id="cricket" name="Habbits"  value="cricket" checked/>
+								<label for="cricket">Playing Cricket</label>
+								<input type="checkbox" id="reading" name="Habbits"  value="Reading" />
+								<label for="reading">Reading Books</label>
+								<input type="checkbox" id="singing" name="Habbits"  value="Singing" />
+								<label for="singing">Singing</label>
+								<input type="checkbox" id="watching" name="Habbits"  value="Watching" />
+								<label for="watching">Watching Movies</label>
+							</div>
+							<div class="col mb-3">
+								<label for="fcolor">Favorate Color :</label>
+								<input type="color" id="fcolor" name="Color"/>
+							</div>  
+							<div class="col mb-3">
+								<label for="fnumber">Favorate Number :</label>
+								<input type="number" id="fnumber" name="Number" min="0" max="9"/>
+							</div>
+							<div class="col mb-3">
+								
+							</div>
+							<div class="col mb-3">
+								
+							</div>
+							<div class="col mb-3">
+								
+							</div>
+							</fieldset>
+						</form>
+					</div>	
+					<div class="col text-center  bg-light text-primary border border-info rounded">
+						<form>
+							<fieldset>
+							<div class="col mb-3">
+								<label for="email">Email :</label>
+								<input type="email" id="email" name="Email" placeholder="@gmail.com"/>
+							</div>
+							<div class="col mt-3 mb-3">
+								<label for="phonenumber">Phone Number :</label>
+								<input type="tel" id="phonenumber" name="Phone_Number" pattren="[[+91]-[0-9]{5}-[0-9]{5}" placeholder="+91 00000 00000"/>
+							</div>	
+							<div class="col mt-3 mb-3">
+								<label for="add">Address :</label>
+								 <textarea id="add" name="Address" rows="10" cols="30"/></textarea> 
+							</div>
+							</fieldset>
+						</form>
+					</div> -->
+					<!-- <div class="col text-center  bg-light text-primary border border-info rounded">
+						<form>
+						<fieldset>
+							<div class="col mt-3 mb-3">
+								<label for="ufile">Up Load File Here :</label>
+								<input type="file" id="ufile" name="File"/>
+							</div>
+							<div class="col mb-3">
+								<label for="search">Search Here :</label>
+								<input type="search" id="search" name="Search"/>
+							</div>
+							<div class="col mb-3">
+								<label for="homepage">Enter URL Here :</label>
+								<input type="url" id="homepage" name="Home Page"/>
+							</div>
+							<div class="col mb-3">
+								<label for="price">Price :</label>
+								0<input type="range" id="price" name="Price" min="10" max="100" step="5"/>100
+							</div>
+							<div class="col mb-3">
+								<label for="courses">Courses :</label>
+								<input list="courses">
+								<datalist id="courses">
+									<option>Angular<option>
+									<option>React<option>
+									<option>vue Js<option>
+									<option>Node Js<option>
+									<option>JAVA<option>
+									<option>PHP<option>
+								</datalist>
+							</div>
+							</fieldset>
+						</form>
+					</div>
+					<div class="col text-center  d-flex bg-light text-primary border border-info rounded">
+						<div class=" col col-sm-3 ms-5">
+							<input type="image" src="F:\Karthik\HTMI_CSS_JavaScript_By_Sunadh_Ram\HTML\Forms\submit-button-png-25.png" alt="Submit" width="48" height="48" class="m-3"/>
+						</div>
+						<div class=" col col-sm-3 ms-5 d-flex">
+							<input type="submit" id="submit" name="Submit" value="Submit" class="m-3"/>
+							<input type="reset" id="reset" name="Reset" value="Reset" class="m-3"/>
+						</div>
+					</div> -->
+			</div>			
+	</div>			
+</div>    

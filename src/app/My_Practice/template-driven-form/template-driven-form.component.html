@@ -1,0 +1,93 @@
+<div class="container mt-3 bg-light">
+	<div class="row">
+			<div class="col">
+					<div class="col text-center mx-auto bg-secondary p-3 text-warning">
+						<h5>Information Form</h5>
+					</div>
+					<div class="col text-center  bg-light text-primary border border-info rounded">
+						<form #myForm="ngForm" (submit)="submitMyForm(myForm.value)">
+							<!-- <fieldset>
+									<legend>Login Form </legend>
+									<div class="col mt-3 mb-3">
+										<label for="username">User Name :</label>
+										<input type="text" id="username" name="username">
+									</div>
+									<div class="col mb-3">
+										<label for="pwd">Password :</label>
+										<input type="password" id="pwd" name="pwd">
+									</div>
+							</fieldset> -->
+							<fieldset>
+								<legend>User Information </legend>
+									<div class="col mb-3">
+										<label for="fname">First Name :</label>&nbsp;&nbsp;&nbsp;
+										<input type="text" id="fname" name="First_Name" placeholder="Chebodula"   [(ngModel)]='user.firstName' #fname="ngModel" ngModel required minlength="5" />
+                                        <span class="text-danger" *ngIf="fname.hasError('required') && fname.dirty">FirstName is Required</span>
+                                        <span class="text-danger" *ngIf="fname.hasError('minlength') && fname.dirty">Minimum 5 chars required</span>
+									</div>
+									<div class="col mb-3">
+										<label for="lname">Last Name :</label>&nbsp;&nbsp;&nbsp;
+										<input type="text" id="lname" name="Last_Name" placeholder="Karthik" [(ngModel)]='user.lastName' #lname="ngModel" ngModel required/>
+                                        <span  class="text-danger" *ngIf="lname.hasError('required')">Last Name is required</span>
+									</div>
+									<div class="col mb-3">
+										<label for="Gender">Gender :</label>&nbsp;&nbsp;&nbsp;
+										<input type="radio" id="male" name="Gender"  value="Male"  [(ngModel)]='user.gender' #gender="ngModel" ngModel required checked/>
+										<label for="male">Male</label>
+										<input type="radio" id="female" name="Gender"  value="Female"  [(ngModel)]='user.gender' #gender="ngModel" ngModel required />
+										<label for="female">Female</label>
+                                        <span class="text-danger" *ngIf="gender.hasError('required')">Gender is required</span>
+									</div>
+									<div class="col mb-3">
+										<label for="dob">Date Of Birth :</label>&nbsp;&nbsp;&nbsp;
+										<input type="date" id="dob" name="DOB"  [(ngModel)]='user.dob' #dob="ngModel" ngModel required />
+                                        <span class="text-danger" *ngIf="dob.hasError('required')">Date of Birth is required</span>
+									</div>
+									<div class="col mb-3">
+										<label for="dtime">Birth Time :</label>&nbsp;&nbsp;&nbsp;
+										<input type="time" id="dtime" name="Time" [(ngModel)]='user.bot' #bot="ngModel" ngModel required/>
+                                        <span class="text-danger" *ngIf="bot.hasError('required')">Date of Birth is required</span>
+									</div>
+									<div class="col mt-3 mb-3">
+										<label for="Habbits">Habbits :</label>&nbsp;&nbsp;&nbsp;
+										<input type="checkbox" id="cricket" name="Habbits"  value="cricket"  [(ngModel)]='user.habbits'  #habbits="ngModel" ngModel required checked/>
+										<label for="cricket">Playing Cricket</label>&nbsp;
+										<input type="checkbox" id="reading" name="Habbits"  value="Reading" [(ngModel)]='user.habbits'  #habbits="ngModel" ngModel required />
+										<label for="reading">Reading Books</label>&nbsp;
+										<input type="checkbox" id="singing" name="Habbits"  value="Singing" [(ngModel)]='user.habbits'  #habbits="ngModel" ngModel required />
+										<label for="singing">Singing</label>&nbsp;
+										<input type="checkbox" id="watching" name="Habbits"  value="Watching"  [(ngModel)]='user.habbits'  #habbits="ngModel" ngModel required/>
+										<label for="watching">Watching Movies</label>
+                                        <span class="text-danger" *ngIf="habbits.hasError('required')">Habbits are required</span>
+									</div>
+                                    <div class="col mb-3">
+                                        <label for="email">Email :</label>&nbsp;&nbsp;&nbsp;
+                                        <input type="email" id="email" name="Email" placeholder="@gmail.com" [(ngModel)]='user.email'  #email="ngModel" ngModel required/>
+                                        <span class="text-danger" *ngIf="email.hasError('required')">Email is required</span>
+                                    </div>
+                                    <div class="col mt-3 mb-3">
+                                        <label for="phonenumber">Phone Number :</label>&nbsp;&nbsp;&nbsp;
+                                        <input type="tel" id="phonenumber" name="Phone_Number" pattren="[[+91]-[0-9]{5}-[0-9]{5}" placeholder="+91 00000 00000" [(ngModel)]='user.phnumber'  #phnumber="ngModel" ngModel required/>
+                                        <span class="text-danger" *ngIf="phnumber.hasError('required')">Phone Number is required</span>
+                                    </div>	
+                                    <fieldset ngModelGroup="address">
+                                        <legend>Address:</legend>
+                                        <div class="col mt-3 mb-3">
+                                            Street : <input name="street" ngModel />
+                                        </div>
+                                        <div class="col mt-3 mb-3">
+                                            City : <input name="city" ngModel />
+                                        </div>
+                                        <div class="col mt-3 mb-3">
+                                            PIN : <input name="pin" ngModel />
+                                        </div>
+                                    </fieldset>
+							</fieldset>
+							<input type="submit" value="submit" class="m-2" [disabled]="myForm.invalid"/>
+    						<input type="reset" value="clear">
+						</form>
+					</div>					
+			</div>			
+	</div>			
+</div>    
+

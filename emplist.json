@@ -1,0 +1,206 @@
+{
+  "posts": [
+    {
+      "empid": "103",
+      "fname": "Chebodula",
+      "lname": "Laxmi",
+      "gend": "Female",
+      "sal": "17000",
+      "dob": "02-05-1951",
+      "email": "chlaxmi@gmail.com",
+      "phoneno": "7997545819",
+      "id": 3
+    },
+    {
+      "empid": "104",
+      "fname": "Chebodula",
+      "lname": "Mounika",
+      "gend": "Female",
+      "sal": "18000",
+      "dob": "06-10-2000",
+      "email": "chmounika@gmail.com",
+      "phoneno": "8125236160",
+      "id": 4
+    },
+    {
+      "empid": "105",
+      "fname": "Neradabilli",
+      "lname": "Swapna",
+      "gend": "Female",
+      "sal": "16000",
+      "dob": "03-01-1984",
+      "email": "nswapna@gmail.com",
+      "phoneno": "9705144208",
+      "id": 5
+    },
+    {
+      "empid": "106",
+      "fname": "Neradabilli",
+      "lname": "Srinu",
+      "gend": "male",
+      "sal": "21000",
+      "dob": "10-10-1974",
+      "email": "nsrinu@gmail.com",
+      "phoneno": "9682513882",
+      "id": 6
+    },
+    {
+      "empid": "107",
+      "fname": "Neradabilli",
+      "lname": "Sindhuja",
+      "gend": "Female",
+      "sal": "13000",
+      "dob": "06-10-2004",
+      "email": "nsindhuja@gmail.com",
+      "phoneno": "7989958396",
+      "id": 7
+    },
+    {
+      "empid": "108",
+      "fname": "Neradabilli",
+      "lname": "Manoj",
+      "gend": "male",
+      "sal": "19000",
+      "dob": "06-03-2006",
+      "email": "nmanoj@gmail.com",
+      "phoneno": "8008268454",
+      "id": 8
+    },
+    {
+      "empid": "109",
+      "fname": "Namana",
+      "lname": "Sankar",
+      "gend": "male",
+      "sal": "13000",
+      "dob": "18-03-1982",
+      "email": "nsankar@gmail.com",
+      "phoneno": "9573956888",
+      "id": 9
+    },
+    {
+      "empid": "110",
+      "fname": "Namana",
+      "lname": "Pavani",
+      "gend": "Female",
+      "sal": "18000",
+      "dob": "06-10-1990",
+      "email": "npavani@gmail.com",
+      "phoneno": "8074242626",
+      "id": 10
+    },
+    {
+      "empid": "111",
+      "fname": "chebodula",
+      "lname": "Satish",
+      "gend": "male",
+      "sal": "12000",
+      "dob": "03-01-1992",
+      "email": "chsatish@gmail.com",
+      "phoneno": "8499936411",
+      "id": 11
+    },
+    {
+      "empid": "112",
+      "fname": "Bachhala",
+      "lname": "Jayasankar",
+      "gend": "male",
+      "sal": "17000",
+      "dob": "09-05-1984",
+      "email": "bjayasankar@gmail.com",
+      "phoneno": "9573954888",
+      "id": 12
+    },
+    {
+      "empid": "113",
+      "fname": "Alajangi",
+      "lname": "Dinesh",
+      "gend": "male",
+      "sal": "15000",
+      "dob": "18-10-1989",
+      "email": "adinesh@gmail.com",
+      "phoneno": "9014501867",
+      "id": 13
+    },
+    {
+      "empid": "114",
+      "fname": "Malleda",
+      "lname": "TavitiNaidu",
+      "gend": "male",
+      "sal": "22000",
+      "dob": "14-11-1988",
+      "email": "mataviti@gmail.com",
+      "phoneno": "9652489696",
+      "id": 14
+    },
+    {
+      "empid": "115",
+      "fname": "Balaga",
+      "lname": "Shiva",
+      "gend": "male",
+      "sal": "16000",
+      "dob": "22-09-1989",
+      "email": "bshiva@gmail.com",
+      "phoneno": "7725977807",
+      "id": 15
+    },
+    {
+      "empid": "116",
+      "fname": "Sasubilli",
+      "lname": "Hemanth",
+      "gend": "male",
+      "sal": "16000",
+      "dob": "10-89-1982",
+      "email": "shemanth@gmail.com",
+      "phoneno": "7672029298",
+      "id": 16
+    },
+    {
+      "empid": "117",
+      "fname": "Danthuluri",
+      "lname": "Raju",
+      "gend": "male",
+      "sal": "25000",
+      "dob": "01-05-1975",
+      "email": "dvnsraju@gmail.com",
+      "phoneno": "9182511345",
+      "id": 17
+    },
+    {
+      "empid": "118",
+      "fname": "Gangulu",
+      "lname": "Srinu",
+      "gend": "male",
+      "sal": "17000",
+      "dob": "02-06-1986",
+      "email": "gsrinu@gmail.com",
+      "phoneno": "8385349560",
+      "id": 18
+    },
+    {
+      "empid": 101,
+      "fname": "Chebodula",
+      "lname": "Karthik",
+      "gend": "Male",
+      "sal": "20000",
+      "dob": "08-06-1990",
+      "email": "chkarthik421@gmail.com",
+      "phoneno": 8328276160,
+      "id": 19
+    },
+    {
+      "empid": 444,
+      "fname": "gkjhkj",
+      "lname": "fgfjh",
+      "gend": "male",
+      "sal": "14535465",
+      "dob": "08-90-90",
+      "email": "gghg@ham,i.co",
+      "phoneno": 66789889,
+      "id": 20
+    }
+  ],
+  "comments": [],
+  "profile": {
+    "name": "typicode"
+  }
+}

@@ -1,0 +1,118 @@
+<!-- <div class="container border p-2">
+    <div class="row">
+        <h5 style="color:blue;">I am Parent Component</h5>
+        <h4>{{iText}}</h4>
+    </div>
+    
+    <div class="row disp-flex text-info">
+        <div class="col col-sm-6 border">
+            <div class="col col-6 disp-flex border">
+                <label class="me-3">Input-Text Data Send To child-01 </label>
+                <input type="text"  [(ngModel)]="ch1text"/>
+            </div>
+            <div class="col col-6 disp-flex border">
+                <label class="me-3">Input-Number Data Send To child-01 </label>
+                <input type="number"  [(ngModel)]="ch1num"/>
+            </div>
+            <div class="col col-6 disp-flex border">
+                <label class="me-3">Input-Select Data Send To child-01 </label>
+                <select type="select" [(ngModel)]="ch1selecttext">
+                    <option>Angular</option>
+                    <option>React</option>
+                    <option>Vue JS</option>
+                </select>
+            </div>
+            <div class="col col-6 disp-flex border">
+                <p class="me-3">Input-Checkbox Data Send To child-01 </p>
+                
+                <input type="checkbox" id="sql" name="database1" value="SQL"  [(ngModel)]="ch1checkboxtext">
+                <label for="sql"> SQL</label>
+                &nbsp;
+                <input type="checkbox" id="mysql" name="database2" value="MY SQL"  [(ngModel)]="ch1checkboxtext">
+                <label for="mysql">MY SQL</label>
+                &nbsp;
+                <input type="checkbox" id="mango" name="database3" value="MANGO DB"  [(ngModel)]="ch1checkboxtext">
+                <label for="mango">MANGO DB</label>
+            </div>         
+        </div>
+        <div class="col col-sm-6 border text-info">
+            <div class="col col-6 disp-flex">
+                <label class="me-3">Input-Text Data Send To child-02 </label>
+                <input type="text"  [(ngModel)]="ch2text" />
+            </div>
+            <div class="col col-6 disp-flex border">
+                <label class="me-3">Input-Number Data Send To child-02 </label>
+                <input type="number"  [(ngModel)]="ch2num" />
+            </div>
+            <div class="col col-6 disp-flex border">
+                <label class="me-3">Input-Select Data Send To child-02 </label>
+                <select type="select"  [(ngModel)]="ch2selecttext">
+                    <option>HTML</option>
+                    <option>CSS</option>
+                    <option>Java Script</option>
+                </select>
+            </div>
+            <div class="col col-6 disp-flex border">
+                <p class="me-3">Input-Checkbox Data Send To child-02 </p>                
+                <input type="checkbox" id="nodejs" name="backend1" value="Node JS"  [(ngModel)]="ch2checkboxtext">
+                <label for="nodejs">Node JS</label>
+                &nbsp;
+                <input type="checkbox" id="php" name="backend2" value="PHP"  [(ngModel)]="ch2checkboxtext">
+                <label for="php">PHP</label>
+                &nbsp;
+                <input type="checkbox" id="java" name="backend3" value="JAVA"  [(ngModel)]="ch2checkboxtext">
+                <label for="java">JAVA</label>
+                &nbsp;
+                <input type="checkbox" id="python" name="backend4" value="PYTHON"  [(ngModel)]="ch2checkboxtext">
+                <label for="python">Python</label>
+            </div>              
+        </div>
+    </div>
+    <div class="row disp-flex">
+        <div class="col col-sm-4 border text-danger">
+            <p>Data From child-01 Input-Text:{{child1Text}}</p>
+            <p>Data From child-01 Input-Number:{{child1Num}}</p>            
+            <p>Data From child-01 Input-Select:{{ch1SelectText}}</p>            
+            <p>Data From child-01 Input-Checkbox:{{ch1CheckboxText}}</p>            
+        </div>
+    
+   
+        <div class="col col-sm-4 border text-success">
+            <p>Data From child-02 Input-Text:{{child2Text}}</p>
+            <p>Data From child-02 Input-Number:</p>            
+            <p>Data From child-02 Input-Select:{{iText}}</p>            
+            <p>Data From child-02 Input-Checkbox:</p>  
+        </div>
+   
+    </div>
+    <div class="row m-2">
+        <div class="col-sm-6 border">
+            <app-child-one [add]="add" [iText]="iText" 
+            (dataEvent)="receiveText($event)"
+           
+            [ch1text]="ch1text" 
+            [ch1num]="ch1num" 
+            [ch1selecttext]="ch1selecttext" 
+            [ch1checkboxtext]="ch1checkboxtext"></app-child-one>
+        </div>
+        <div class="col-sm-6 border">
+            <app-child-two (nameEvent)="receiveName($event)" (textEvent)="receiveChild2($event)" [ch2text]="ch2text" [ch2num]="ch2num" [ch2selecttext]="ch2selecttext" [ch2checkboxtext]="ch2checkboxtext"></app-child-two>
+        </div>
+    </div>
+</div> ---->
+
+ <!-- (dataEvent)="receiveNum($event)"
+            (dataEvent)="receiveSelectText($event)"
+            (dataEvent)="receiveCheckboxText($event)" -->
+
+<!---====================================================================================================-->
+<div class="row m-2">
+    <div class="col-sm-6 border">
+        <app-child-one [myNumber]="counter" ></app-child-one>
+        <button type="button" class="btn btn-primary" (click)="increment()">+1</button>
+        <button type="button" class="btn btn-danger" (click)="decrement()">-1</button>
+    </div>
+    <div class="col-sm-6 border">
+        <app-child-two></app-child-two>
+    </div>
+</div>

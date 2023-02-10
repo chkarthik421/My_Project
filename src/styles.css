@@ -1,0 +1,16 @@
+/* You can add global styles to this file, and also import other style files */
+@import '~bootstrap/dist/css/bootstrap.css';
+
+
+* {
+    margin: 0 auto;
+    box-sizing: border-box;
+}
+
+a {
+     text-decoration: none;
+}
+a:active    {
+    color: #ce2b2b;
+    background-color: #49ce0c;
+} 

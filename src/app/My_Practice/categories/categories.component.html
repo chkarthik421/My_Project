@@ -1,0 +1,29 @@
+<!-- <div class="row">
+    <div *ngFor="let categoryObj of categories" class="col">
+        <app-category [categoryObj]="categoryObj"></app-category>
+    </div>
+</div> -->
+<div class="row col-sm-12 text-center">
+    <table class="table table-bordered table-primary">
+        <thead>
+            <tr>
+                <th>Emp_Id</th>
+                <th>First_Name</th>
+                <th>Last_Name</th>
+                <th>Phone_Number</th>
+                <th>Full_Name</th>
+                <th>Village</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let employee of Employees">
+                <td>{{employee.Emp_Id}}</td>
+                <td>{{employee.First_Name}}</td>
+                <td>{{employee.Last_Name}}</td>
+                <td>{{employee.Phone_Number}}</td>
+                <td>{{employee.getFullName()}}</td>
+                <td>{{employee.Village}}</td>
+            </tr>
+        </tbody>
+    </table>
+</div>

@@ -1,0 +1,103 @@
+
+<!-----------Interpolation----------------->
+<div>       
+    <h1>{{myText}}</h1>
+    <img src='{{imagePath}}'/>
+    <h2>{{2+3}}</h2>
+</div>
+<hr>
+<!-----------Property Binding----------------->
+    <h1 [innerHtml]='myText'></h1>
+    <img [src]='imagePath'/>
+    <img bind-src ='imagePath'/>
+    <h2 [innerHtml]='2+3'></h2>
+<!----------Interpolation Vs Property Binding----------->
+
+<div>
+    <button disabled='{{isDisabled}}'>Try Me</button>
+    <br/><br/>
+    <button [disabled]='isDisabled'>Try Me</button>
+	<br/><br/>
+	<button bind-disabled='isDisabled'>Try Me</button>
+</div>
+
+<div>
+    <h1>My Name is {{myText}}</h1>
+    <img src='{{imagePath}}'/>
+    <h1> a is {{a}} b is {{b}} addition is {{a+b}}</h1>
+    <h1>{{ 'a is '+a+' b is '+b+' additon is '+(a+b) }}</h1>
+</div>
+
+<!----------Event Binding----------->
+
+----<div>
+    <h1>click the below button to invoke the function</h1>
+    <button (click)="f1()">btn-1</button>
+    <br/><hr/>
+    <h1 [hidden]='flag'>Show/Hide this Paragraph By Clicking the Below Button</h1>
+    <button (click)="flag = !flag" >btn-2</button>
+</div>--
+
+<!----------Template Reference Variable----------->
+---<div>
+    number1:
+    <input #num1 /> <br/><br/>
+    number2:
+    <input ref-num2 /> <br/><br/>
+
+    <button (click)="add(num1.value,num2.value)">Add</button>
+</div>--
+
+<!----------Class Binding----------->
+
+<h1>
+    <p [class.myClass]='flag'> Add a class to an element </p>
+    <p [ngClass]="myClasses"> Add Multiple classes to an element </p>
+    <p [ngClass]="myFunction()"> Add Multiple classes to an element </p>
+    <button class="btn" [ngClass]="flag ? 'btn-success' : 'btn-danger'">Class Binding example</button>
+</h1>
+
+<!----------------Style Binding------->
+
+<h1>
+    <p [style.color]="num % 2 == 0 ? 'blue' : 'red'"> Add a style </p>
+    <p [style.fontSize.px]='24'> Add style with unit </p>
+    <p [style.background-color]=" flag?'green':'blue' "> Add style conditionally </p>
+    <p [ngStyle]="myStyles"> NgStyle for multiple values </p>
+    <p [ngStyle]="myFunction1()"> NgStyle for multiple values </p>
+  </h1>
+
+<!----------------Two way Data Binding------->
+
+<div>
+    <input [(ngModel)]="name" /><br>
+    <input bindon-ngModel='name' /><br>
+    Your Name is: {{name}}
+</div>
+
+<!----------------From Folder------->
+
+ <!-- <p [hidden]="flag">This is karthik</p>
+
+<button type="button" (click)=fun1() >
+    Show/Hide
+</button> -->
+
+
+
+<!-- <input type="text" [(ngModel)]="name"><br><br>
+<input type="text" [value]="name"> 
+
+
+<div *ngIf="n%2===0">{{n}} is Even</div>
+<div *ngIf="n%2!==0">{{n}} is Odd</div>
+
+
+<div *ngIf="n%2===0;else oddblock">
+    {{n}} is Even
+</div>
+
+<ng-template #oddblock>
+    {{n}} is Odd
+</ng-template> -->
+

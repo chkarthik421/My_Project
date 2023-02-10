@@ -1,0 +1,55 @@
+<input type="checkbox" [(ngModel)]="flag">toggle
+<table [hidden]="flag" class="table table-bordered table-striped">
+    <tr>
+        <td>ID</td>
+        <td>Name</td>
+        <td>Add</td>
+        <td>Ph No</td>
+    </tr>
+    <tr>
+        <td>ID</td>
+        <td>Name</td>
+        <td>Add</td>
+        <td>Ph No</td>
+    </tr>
+    <tr>
+        <td>ID</td>
+        <td>Name</td>
+        <td>Add</td>
+        <td>Ph No</td>
+    </tr>
+    <tr>
+        <td>ID</td>
+        <td>Name</td>
+        <td>Add</td>
+        <td>Ph No</td>
+    </tr>
+
+</table>
+
+<hr/>
+<h1 [ngSwitch]="dayNumber">
+    <p *ngSwitchCase="1">To day is : Monday</p>
+    <p *ngSwitchCase="2">To day is : Tuesday</p>
+    <p *ngSwitchCase="3">To day is : Wednesday</p>
+    <p *ngSwitchCase="4">To day is : Thursday</p>
+    <p *ngSwitchCase="5">To day is : Friday</p>
+    <p *ngSwitchCase="6">To day is : Saturday</p>
+    <p *ngSwitchCase="7">To day is : Sunday</p>
+</h1>
+
+<hr/>
+
+<h1 [ngSwitch]="alphabet">
+    <p *ngSwitchCase="'A'">A for Apple</p>
+    <p *ngSwitchCase="'B'">B for Ball</p>
+    <p *ngSwitchCase="'C'">C for Cat</p>
+    
+</h1>
+
+<P>{{crrTime}}</P> 
+
+
+
+ 
+
