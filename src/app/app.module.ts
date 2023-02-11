@@ -28,6 +28,8 @@ import {  myRoutings } from './app-routing.module';
 import { CommentsComponent } from './My_Practice/comments/comments.component';
 import { FormsComponent } from './My_Practice/forms/forms.component';
 import { TemplateDrivenFormComponent } from './My_Practice/template-driven-form/template-driven-form.component';
+import { HomeComponent } from './My_Practice/home/home.component';
+import { LoginComponent } from './My_Website/login/login.component';
 
 
 
@@ -51,7 +53,9 @@ import { TemplateDrivenFormComponent } from './My_Practice/template-driven-form/
     myRoutings,
     CommentsComponent,
     FormsComponent,
-    TemplateDrivenFormComponent
+    TemplateDrivenFormComponent,
+    HomeComponent,
+    LoginComponent
    
     
   ],

@@ -6,9 +6,11 @@ import { NgForComponent } from './My_Practice/ng-for/ng-for.component';
 import { NgSwitchComponent } from './My_Practice/ng-switch/ng-switch.component';
 import { CURDOparationComponent } from './My_Practice/curd-oparation/curd-oparation.component';
 import { PagenotfoundComponent } from './My_Practice/pagenotfound/pagenotfound.component';
+import { HomeComponent } from './My_Practice/home/home.component';
 
 const routes: Routes = [
-  { path:'', redirectTo:'/ngfor',pathMatch:'full'},
+  { path:'', redirectTo:'/home',pathMatch:'full'},
+  { path:'home', component:HomeComponent},
   { path:'list', component:TopicListComponent},
   { path:'databinding', component: DataBindingComponent},
   { path:'ngfor', component: NgForComponent},
