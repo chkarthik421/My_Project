@@ -30,6 +30,7 @@ import { FormsComponent } from './My_Practice/forms/forms.component';
 import { TemplateDrivenFormComponent } from './My_Practice/template-driven-form/template-driven-form.component';
 import { HomeComponent } from './My_Practice/home/home.component';
 import { LoginComponent } from './My_Website/login/login.component';
+import { SignupComponent } from './My_Website/signup/signup.component';
 
 
 
@@ -55,7 +56,8 @@ import { LoginComponent } from './My_Website/login/login.component';
     FormsComponent,
     TemplateDrivenFormComponent,
     HomeComponent,
-    LoginComponent
+    LoginComponent,
+    SignupComponent
    
     
   ],

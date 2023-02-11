@@ -7,6 +7,8 @@ import { NgSwitchComponent } from './My_Practice/ng-switch/ng-switch.component';
 import { CURDOparationComponent } from './My_Practice/curd-oparation/curd-oparation.component';
 import { PagenotfoundComponent } from './My_Practice/pagenotfound/pagenotfound.component';
 import { HomeComponent } from './My_Practice/home/home.component';
+import { LoginComponent } from './My_Website/login/login.component';
+import { SignupComponent } from './My_Website/signup/signup.component';
 
 const routes: Routes = [
   { path:'', redirectTo:'/home',pathMatch:'full'},
@@ -16,9 +18,9 @@ const routes: Routes = [
   { path:'ngfor', component: NgForComponent},
   { path:'ngswitch', component: NgSwitchComponent},
   { path:'curdoparation', component: CURDOparationComponent},
-  { path:"**", component: PagenotfoundComponent},
-
-
+  { path:'login', component: LoginComponent},
+  { path:'signup', component: SignupComponent},
+  { path:"**", component: PagenotfoundComponent}
 ];
 
 @NgModule({

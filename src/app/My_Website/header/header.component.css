@@ -7,11 +7,11 @@
 
 }
 
-.logo_section   {
+ .logo_section   {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 10px 100px;
+    padding: 10px 100px; 
     
 }
 #logo   {
@@ -26,6 +26,8 @@ width: 50px;
     font-weight: bold;
     font-style: italic;
     font-family: 'Times New Roman', Times, serif;
-    margin-right: 500px;
+    
+} 
+#login{
+    margin-right: 5px;
 }
-
