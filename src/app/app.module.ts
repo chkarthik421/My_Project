@@ -8,6 +8,7 @@ import {HttpClientModule} from '@angular/common/http';
 import { ReactiveFormsModule } from '@angular/forms';
 
 
+
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { TopHeaderComponent } from './My_Website/top-header/top-header.component';
@@ -31,6 +32,8 @@ import { TemplateDrivenFormComponent } from './My_Practice/template-driven-form/
 import { HomeComponent } from './My_Practice/home/home.component';
 import { LoginComponent } from './My_Website/login/login.component';
 import { SignupComponent } from './My_Website/signup/signup.component';
+import { RegisterformComponent } from './My_Website/registerform/registerform.component';
+import { FormValidationComponent } from './My_Practice/form-validation/form-validation.component';
 
 
 
@@ -57,7 +60,9 @@ import { SignupComponent } from './My_Website/signup/signup.component';
     TemplateDrivenFormComponent,
     HomeComponent,
     LoginComponent,
-    SignupComponent
+    SignupComponent,
+    RegisterformComponent,
+    FormValidationComponent
    
     
   ],
@@ -71,6 +76,7 @@ import { SignupComponent } from './My_Website/signup/signup.component';
     ReactiveFormsModule,
     ButtonsModule,
     BrowserAnimationsModule,
+    
     
     
   ],

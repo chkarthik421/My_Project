@@ -9,6 +9,9 @@ import { PagenotfoundComponent } from './My_Practice/pagenotfound/pagenotfound.c
 import { HomeComponent } from './My_Practice/home/home.component';
 import { LoginComponent } from './My_Website/login/login.component';
 import { SignupComponent } from './My_Website/signup/signup.component';
+import { RegisterformComponent } from './My_Website/registerform/registerform.component';
+import { FormsComponent } from './My_Practice/forms/forms.component';
+import { FormValidationComponent } from './My_Practice/form-validation/form-validation.component';
 
 const routes: Routes = [
   { path:'', redirectTo:'/home',pathMatch:'full'},
@@ -20,6 +23,10 @@ const routes: Routes = [
   { path:'curdoparation', component: CURDOparationComponent},
   { path:'login', component: LoginComponent},
   { path:'signup', component: SignupComponent},
+  { path:'register', component: RegisterformComponent},
+  { path:'forms', component: FormsComponent},
+  { path:'formvalidation', component:  FormValidationComponent},
+
   { path:"**", component: PagenotfoundComponent}
 ];
 

@@ -1,0 +1,55 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+  }
+  .content-wrapper{
+    background: -webkit-linear-gradient(-90deg,#0ed8df,#4127b8);
+    
+  }
+  .card {
+    /* height: 450px; */
+    margin:auto;
+    padding: auto;
+    background: -webkit-linear-gradient(left,#45b257, #a7314b);
+  }
+  .card-header {
+    height: 50px;
+    font-size: 35px;
+    font-weight: 600;
+    color: hsl(200, 85%, 50%);
+  }
+  
+  
+  .card-footer{
+    height: 50px;
+    font-size: 20px;
+    font-weight: 600;
+    color: hsl(20, 100%, 60%);
+    padding-top: 10px;
+  }
+  
+  #log {
+    color: hsl(130, 87%, 50%);
+    padding-left: 20px;
+  }
+  .field {
+    margin: 30px 0px 30px;
+    /* width: 100%; */
+    
+  }
+  .field input {
+    height: 50px;
+  }
+  
+  #msg {
+    color: hsl(2, 89%, 50%);
+  }
+  
+  .signup {
+    color: #15ee0e;
+  }
+  .field-btn input {
+    margin-left: 10px;
+  }

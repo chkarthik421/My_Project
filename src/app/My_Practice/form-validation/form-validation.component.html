@@ -1,0 +1,60 @@
+<div class="container mt-3 bg-light">
+    <div class="row">
+        <div class="col">
+            <form #myform="ngForm" (ngSubmit)="onSubmit(formModel)" novalidate>
+                <div class="col col-sm-4 mb-3">
+                    <label for="fname">First Name :</label>
+                    <input type="text" id="fname" name="First_Name" class="form-control" #name="ngModel"
+                        [(ngModel)]='formModel.name' [class.is-invalid]="name.invalid  && name.touched" required />
+                    <span class="text-danger" [class.d-none]="name.valid || name.untouched">Name is Required</span>
+                </div>
+                <div class="col col-sm-4 mb-3">
+                    <label for="email">Email :</label>
+                    <input type="email" id="email" name="Email" class="form-control" #email="ngModel"
+                        [(ngModel)]='formModel.email' [class.is-invalid]="email.invalid"
+                        pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" required />
+                    <div *ngIf="email.errors && (email.invalid || email.touched)">
+                        <span class="text-danger"*ngIf="email.errors && email.errors['required']">Email is Required</span>
+                        <span class="text-danger" *ngIf="email.errors && email.errors['pattern']">Invalid Email Id</span> 
+
+                    </div>
+                </div>
+                <div class="col col-sm-4 mb-3">
+                    <label for="courses">Courses :</label>
+                    <select name="Course" #course="ngModel" [(ngModel)]='formModel.course'
+                        [class.is-invalid]="courseHasError  && course.touched" required
+                        (blur)="validCourse(course.value)" (change)="validCourse(course.value)">
+                        <option value="default">Select Course</option>
+                        <option>Angular</option>                      
+                        <option>React</option>
+                        <option>vue Js</option>
+                        <option>Node Js</option>
+                        <option>JAVA</option>                        
+                        <option>PHP</option>
+                        
+                    </select>
+                    <!-- <input list="courses">
+                    <datalist id="courses"  name="Course" #course="ngModel" [(ngModel)]='formModel.course'  required>
+                        <option>Select Course</option>
+                        <option>Angular<option>
+                        <option>React<option>
+                        <option>vue Js<option>
+                        <option>Node Js<option>
+                        <option>JAVA<option>
+                        <option>PHP<option>
+                    </datalist> -->
+                    <span class="text-danger" [class.d-none]="courseHasError || course.untouched">Please select one
+                        course.</span>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+<div class="col col-sm-4 offset-3">
+   <button type="submit" [disabled]="myform.form.invalid || !courseHasError " class="btn btn-warning" value="submit" (click)="onSubmit(formModel)">Submit</button>
+</div>
+<!-- <div class="col col-sm-4 offset-3">
+     <p>{{formModel.name}}</p><p>{{name.touched}}</p>
+    <p>{{formModel.email}}</p><p>{{email.touched}}</p> 
+    <p> Validation : {{myform.form.valid}}</p>
+</div> -->

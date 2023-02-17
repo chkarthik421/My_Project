@@ -1,0 +1,6 @@
+.nameinvalid{
+    border-color: red;
+}
+.namevalid{
+    border-color: greenyellow;
+}

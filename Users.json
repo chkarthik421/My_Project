@@ -1,0 +1,21 @@
+{
+  "users": [
+    {
+      "name": "karthik",
+      "email": "chkarthik421@gamil.com",
+      "course": "angular",
+      "id": 1
+    }
+   
+  ],
+  "comments": [
+    {
+      "id": 1,
+      "body": "some comment",
+      "postId": 1
+    }
+  ],
+  "profile": {
+    "name": "typicode"
+  }
+}

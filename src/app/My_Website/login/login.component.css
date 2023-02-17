@@ -5,10 +5,47 @@
   font-family: 'Poppins', sans-serif;
 }
 .content-wrapper{
-  background: -webkit-linear-gradient(left, #a445b2, #fa4299);
+  background: -webkit-linear-gradient(-90deg, #45b257, #4433db);
+  height: 500px;
 }
 .card {
   height: 450px;
   margin:auto;
+  padding: auto;
   background: -webkit-linear-gradient(left, #a445b2, #fa4299);
+}
+.card-header {
+  height: 50px;
+  font-size: 35px;
+  font-weight: 600;
+  color: hsl(200, 85%, 50%);
+}
+
+.card-body {
+              line-height: 10px;
+              
+}
+.card-footer{
+  height: 50px;
+  font-size: 20px;
+  font-weight: 600;
+  color: hsl(20, 100%, 60%);
+  padding-top: 10px;
+}
+
+#sign {
+  color: red;
+  padding-left: 20px;
+}
+.field {
+  margin: 30px 0px 30px;
+  width: 100%;
+  
+}
+.field input {
+  height: 50px;
+}
+
+#forgot {
+  color: #10ec59;
 }

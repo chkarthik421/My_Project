@@ -1,5 +1,35 @@
-.home {
-    background: linear-gradient(-180deg,#d80f95,hsl(0, 94%, 49%));
-    height: auto;
+* {
+    margin: auto;
+    box-sizing: border-box;
+}
+.wrapper {
+    background: linear-gradient(-180deg,hsl(135, 76%, 34%),hsl(251, 49%, 35%));
+    height: 100%;
     width: 100%;
+}
+
+#logoimg {
+    width: 100px;
+    height: 100px;
+    border-radius: 40px;
+    margin-top: 10px;
+}
+
+.title {
+    text-align: left;
+}
+#title-name {
+    font-size:50px;
+    font-style: italic;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: rgb(13, 236, 43);
+}
+.sec1,.sec2,.sec3 {
+    display: flex;
+    box-shadow: 0px 0px 12px #333;
+    padding: 20px;
+    text-align: center;
+    margin: 10px;
+    border-radius: 20px;
+    
 }

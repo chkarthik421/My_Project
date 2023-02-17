@@ -1,0 +1,83 @@
+<div class="content-wrapper">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col col-sm-12 offset-3">
+                <div class="card col-sm-6 mt-4 mb-4">
+                    <div class="card-header">
+                        <div class="title signup">Register Form</div>
+                    </div>
+                    <div class="card-body">
+                        <form action="#" class="login">
+                            <div class="field">
+                                <input type="text" class="col col-sm-6 rounded" placeholder="First Name" required>
+                            </div>
+                            <div class="field">
+                                <input type="text" class="col col-sm-6 rounded" placeholder="Last Name" required>
+                            </div>
+                            <div class="field-radio">
+                                <label>Gender : </label>&nbsp;&nbsp;
+                                <input type="radio" name="Gender" value="Male" required>&nbsp;&nbsp;
+                                <label>Male</label>&nbsp;&nbsp;
+                                <input type="radio" name="Gender" value="Female" required>&nbsp;&nbsp;
+                                <label>Female</label>
+                            </div>
+                            <div class="field">
+                                <input type="text" class="col col-sm-6 rounded" placeholder="Email" required>
+                            </div>
+                            <div class="field">
+                                <input type="number" class="col col-sm-6 rounded" placeholder="Phone Number" required>
+                            </div>                           
+                            <div class="field-checkbox">
+                                <label>Habbits : </label>&nbsp;&nbsp;
+                                <input type="checkbox" name="Sports" value="Cricket" required>&nbsp;&nbsp;
+                                <label>Sports</label>&nbsp;&nbsp;
+                                <input type="checkbox" name="Reading" value="Books" required>&nbsp;&nbsp;
+                                <label>Reading</label>&nbsp;&nbsp;
+                                <input type="checkbox" name="Singing" value="Songs" required>&nbsp;&nbsp;
+                                <label>Singing</label>&nbsp;&nbsp;
+                                <input type="checkbox" name="Waching" value="Movies" required>&nbsp;&nbsp;
+                                <label>Waching</label>
+                            </div>
+                            <fieldset>
+                                <legend>Address</legend>                                    
+                                    <div class="field">
+                                        <input type="text" class="col col-sm-6 rounded" placeholder="Village" required>
+                                    </div>
+                                    <div class="field">
+                                        <input type="text" class="col col-sm-6 rounded" placeholder="Mandal" required>
+                                    </div>
+                                    <div class="field">
+                                        <input type="text" class="col col-sm-6 rounded" placeholder="District" required>
+                                    </div>
+                                    <div class="field">
+                                        <select type="text" class="col col-sm-6 rounded">
+                                            <option>Select State</option>
+                                            <option>Andhra Praesh</option>
+                                            <option>Telangana</option>
+                                            <option>Tamilanadu</option>
+                                            <option>Kerala</option>
+                                            <option>Orissa</option>
+                                            <option>Bihar</option>
+                                            <option>Assam</option>
+                                            <option>Uttar Pradesh</option>
+                                        </select>
+                                    </div>
+                                    <div class="field">
+                                        <input type="number" class="col col-sm-6 rounded" placeholder="Pin Number" required>
+                                    </div>
+                            </fieldset>
+                            <div class="m-3 field-btn">
+                                <input type="submit" value="Register" class=" col col-sm-3 btn btn-info">
+                                <input type="reset" value="Reset" class=" col col-sm-3 btn btn-warning">
+                            </div>
+                        </form>
+                    </div>
+                    <div class="card-footer">
+                        <div id="msg">You are already registred? <a routerLink="/login" routerLinkActive="active"
+                                id="log">Login</a></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
