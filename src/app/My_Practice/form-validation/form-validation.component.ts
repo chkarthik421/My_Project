@@ -12,6 +12,7 @@ export class FormValidationComponent {
   constructor(private formService:FormService){}
   formModel= new FormModel("karthik","chkarthik421@gmail.com","default");
   courseHasError:boolean=true;
+  submitted:boolean=false;
   
  
   validCourse(value:any){
@@ -22,6 +23,7 @@ export class FormValidationComponent {
     }
   }
   onSubmit(formModel:FormModel){
+    this.submitted=true;
     this.formService.postUsers(this.formModel).subscribe(data=>console.log("success",data),
     error=>console.error("Error!",error));
     

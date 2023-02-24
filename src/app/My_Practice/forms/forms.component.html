@@ -167,3 +167,23 @@
 			</div>			
 	</div>			
 </div>   --->  
+<form [formGroup]="registerForm">
+	<label>Firstname:</label>
+	<input type="text" formControlName="firstname">
+  
+	<label>Lastname:</label>
+	<input type="text" formControlName="lastname">
+	<div formGroupName='address'>
+		<label>Street:</label>
+		<input type="text" formControlName="street">
+  
+		<label>Zip:</label>
+		<input type="text" formControlName="zip">
+  
+		<label>City:</label>
+		<input type="text" formControlName="city">
+	</div>
+	
+	<button type="submit">Submit</button>
+  </form>
+  <h2>{{registerForm.value | json}}</h2>

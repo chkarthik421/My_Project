@@ -1,7 +1,7 @@
 <div class="container mt-3 bg-light">
     <div class="row">
         <div class="col">
-            <form #myform="ngForm" (ngSubmit)="onSubmit(formModel)" novalidate>
+            <form #myform="ngForm" (ngSubmit)="onSubmit(formModel)"  [hidden]="submitted" novalidate>
                 <div class="col col-sm-4 mb-3">
                     <label for="fname">First Name :</label>
                     <input type="text" id="fname" name="First_Name" class="form-control" #name="ngModel"
@@ -43,7 +43,7 @@
                         <option>JAVA<option>
                         <option>PHP<option>
                     </datalist> -->
-                    <span class="text-danger" [class.d-none]="courseHasError || course.untouched">Please select one
+                    <span class="text-danger" [class.d-none]="!courseHasError || course.untouched">Please select one
                         course.</span>
                 </div>
             </form>
@@ -51,7 +51,7 @@
     </div>
 </div>
 <div class="col col-sm-4 offset-3">
-   <button type="submit" [disabled]="myform.form.invalid || !courseHasError " class="btn btn-warning" value="submit" (click)="onSubmit(formModel)">Submit</button>
+   <button type="submit" [disabled]="myform.form.invalid || courseHasError " class="btn btn-warning" value="submit" (click)="onSubmit(formModel)">Submit</button>
 </div>
 <!-- <div class="col col-sm-4 offset-3">
      <p>{{formModel.name}}</p><p>{{name.touched}}</p>

@@ -34,6 +34,10 @@ import { LoginComponent } from './My_Website/login/login.component';
 import { SignupComponent } from './My_Website/signup/signup.component';
 import { RegisterformComponent } from './My_Website/registerform/registerform.component';
 import { FormValidationComponent } from './My_Practice/form-validation/form-validation.component';
+import { ReactiveFormComponent } from './My_Practice/reactive-form/reactive-form.component';
+import { ToUpperCaseComponent } from './My_Practice/to-upper-case/to-upper-case.component';
+import { LifeCycleHooksComponent } from './My_Practice/life-cycle-hooks/life-cycle-hooks.component';
+import { ObservablesComponent } from './My_Practice/observables/observables.component';
 
 
 
@@ -62,7 +66,11 @@ import { FormValidationComponent } from './My_Practice/form-validation/form-vali
     LoginComponent,
     SignupComponent,
     RegisterformComponent,
-    FormValidationComponent
+    FormValidationComponent,
+    ReactiveFormComponent,
+    ToUpperCaseComponent,
+    LifeCycleHooksComponent,
+    ObservablesComponent
    
     
   ],

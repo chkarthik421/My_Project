@@ -12,6 +12,9 @@ import { SignupComponent } from './My_Website/signup/signup.component';
 import { RegisterformComponent } from './My_Website/registerform/registerform.component';
 import { FormsComponent } from './My_Practice/forms/forms.component';
 import { FormValidationComponent } from './My_Practice/form-validation/form-validation.component';
+import { ReactiveFormComponent } from './My_Practice/reactive-form/reactive-form.component';
+import { ToUpperCaseComponent } from './My_Practice/to-upper-case/to-upper-case.component';
+import { LifeCycleHooksComponent } from './My_Practice/life-cycle-hooks/life-cycle-hooks.component';
 
 const routes: Routes = [
   { path:'', redirectTo:'/home',pathMatch:'full'},
@@ -26,6 +29,9 @@ const routes: Routes = [
   { path:'register', component: RegisterformComponent},
   { path:'forms', component: FormsComponent},
   { path:'formvalidation', component:  FormValidationComponent},
+  { path:'reactiveform', component:  ReactiveFormComponent},
+  { path:'touppercase', component:  ToUpperCaseComponent},
+  { path:'lifecyclehooks', component:  LifeCycleHooksComponent},
 
   { path:"**", component: PagenotfoundComponent}
 ];
@@ -41,7 +47,8 @@ export const myRoutings = [
                             NgForComponent,
                             NgSwitchComponent,
                             CURDOparationComponent,
-                            PagenotfoundComponent
+                            PagenotfoundComponent,
+                            ToUpperCaseComponent
                           ]
 
 

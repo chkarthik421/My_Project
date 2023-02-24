@@ -1,0 +1,67 @@
+<div class="contant-wrapper">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col col-sm-8">
+                <div class="mb-5 mt-3">
+                    <h3>Reactive Form</h3>
+                </div>
+                <div class="col col-sm-8">
+                    <form [formGroup]="myForm">
+                        <div class="form-group">
+                            <label class="form-control-label">User Name : </label>
+                            <input type="text" class="form-control" name="User_Name" [class.is-invalid]="myForm.get('userName')?.invalid  && myForm.get('userName')?.touched" required formControlName="userName"/>
+                            <div *ngIf="userName?.errors && (userName?.invalid  && userName?.touched )">
+                                <span class="text-danger" *ngIf="userName?.errors && userName?.errors?.['required']">Name is Required</span>
+                                <!-- <span class="text-danger"*ngIf ="myForm.get('userName')?.errors?.['minLength']">Required Minimum 5 Characters</span> -->
+                                <span class="text-danger" *ngIf="userName?.errors?.['forbiddenName']">{{userName?.errors?.['forbiddenName']}} user name not allowed.</span>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label class="form-control-label">Password : </label>
+                            <input type="password" class="form-control" name="Pass_Word" formControlName="password" required=""/>
+                        </div>
+                        <div class="form-group">
+                            <label class="form-control-label">Confirm Password : </label>
+                            <input type="password" class="form-control" name="Confirm_Password" formControlName="confirmPassword" required=""/>
+                        </div>
+                        <div class="col col-sm-8" formGroupName="address">                            
+                                <legend>Address</legend>                                
+                                <div class="form-group">
+                                    <label class="form-control-label">Village : </label>
+                                    <input type="text" class="form-control" name="Village" formControlName="village" required=""/>
+                                </div>
+                                <div class="form-group">
+                                    <label class="form-control-label">Town/Mandal : </label>
+                                    <input type="text" class="form-control" name="Town/Mandal" formControlName="town" required=""/>
+                                </div>
+                                <div class="form-group">
+                                    <label class="form-control-label">District : </label>
+                                    <input type="text" class="form-control" name="District" formControlName="district" required=""/>
+                                </div>
+                                <div class="form-group">
+                                    <label class="form-control-label">State : </label>
+                                    <select  class="form-control" name="State" formControlName="state" required="">
+                                        <option value="default">Choose...</option>
+                                        <option value="AndhraPradesh">Andhra Pradesh</option>
+                                        <option value="Telangana">Telangana/option>
+                                        <option value="Orissa">Orissa</option>
+                                        <option value="Tamilnadu">Tamilnadu/option>
+                                        <option value="Bihar">Bihar</option>
+                                    </select>
+                                </div>
+                                <div class="form-group">
+                                    <label class="form-control-label">Pincode : </label>
+                                    <input type="text" class="form-control" name="Pincode" formControlName="pincode" required=""/>
+                                </div>                            
+                        </div>
+                    </form>
+                </div>
+                <div class="col col-sm-8">
+                   <p> {{myForm.value | json}}</p>
+                   
+                   <p>{{myForm.status}}</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
